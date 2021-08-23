@@ -54,7 +54,7 @@ function App() {
       <ContactForm onSubmit={handlerFormSubmit} />
       <h2>Contacts</h2>
       <Filter value={filter} onChange={changeFilter} />
-      <ContactsList contacts={allVisibleContacts} onDelete={deleteContact} />
+      <ContactsList contacts={allVisibleContacts()} onDelete={deleteContact} />
     </Container>
   );
 }
